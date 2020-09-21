@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>形参与实参</title>
+</head>
+<body>
+    <script>
+        function s(){
+            var n=0;
+            for(var i=0;i<=100;i++){
+                n+=i;
+            }
+            console.log(n);
+        }
+        s();
+
+        //形参与实参
+        //形参---形式上的参数，声明函数的时候写的，多个形参使用需要用“,”隔开，形参的值是不固定的,形参仅仅是一个占位作用;
+        //形参与实参实际传入的值要一一对应
+
+        //实际参数：实参在调用时，实际传入函数中的值，多个形参使用需要用“,”隔开,传入后，在函数中使用形参获取具体的值;
+
+
+
+        function fun(a,b){
+            console.log(a+b)
+        }
+        fun(1,4);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一元运算符</title>
+</head>
+<body>
+    <script>
+        var n1 = 6;
+        var n2 = 6;
+        n1++;/* 自增运算 */
+        ++n1;/* 值为7*/
+        n1--;/* 自减运算 */
+        --n1;/*  */
+        console.log(n1+ ++n2);/* 操作符在前，先进行自增运算，再进行其他运算 */
+        console.log(n1+ n2++);/* 操作符在后，先进行其他运算，再进行自增运算 */
+    </script>
+</body>
+</html>

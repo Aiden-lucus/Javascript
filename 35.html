@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标准库对象（内置对象）</title>
+</head>
+<body>
+    <script>
+        // var n = -2;
+        // var n2 = Math.abs(n);//取绝对值
+        // console.log(n2);
+
+       
+        //函数到那会一个浮点，伪随机数在范围[0,1],也就是说，从0（包括0）往上，但是不包括1（排除1）
+        //然后可以缩放到所需的范围，实现将初始种子选择到随机数生成算法，它不能被用户选择或重置
+        //var r = Math.random();
+        //console.log(r);//每次刷新都会被重置
+
+
+        //console.log(Math.random()*10);//刷新重置
+
+        
+        var n1 = Math.random()*10;
+        //刷新取整数
+        var n2 = Math.floor(n1);
+        console.log(n2);
+
+
+        //获取n-m之间的随机数值
+        //Math.random()*(m-n)+n
+        var n = Math.floor(Math.random()*(32-11)+11);
+        console.log(n);
+    </script>
+</body>
+</html>

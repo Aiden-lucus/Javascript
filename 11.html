@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逻辑运算符</title>
+</head>
+<body>
+    <script>
+        //&& 逻辑与运算符 参与运算的数据必须是同时为真，结果为真
+        //|| 逻辑或运算符 参与运算的数据只要有一个为真，结果为真
+        //！ 逻辑非运算符 获取相反的结果
+        var s1 = '';
+        console.log(!s1);/* 结果值为True */
+
+        var a = 1;
+        var b = 2;
+        var c = 3;
+        //在js运算中，逻辑运算的结果由整个表达式的子表达式决定
+        console.log(c && b);
+        console.log(a || c);
+        //运算优先级 先运算&& 再运算||
+        console.log(a || c && b);
+    </script>
+</body>
+</html>

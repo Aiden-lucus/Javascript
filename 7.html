@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据类型转换-数值型</title>
+</head>
+<body>
+    <script>
+       var a = '1';
+       var b = Number(a);
+       console.log(typeof b);//进行数值型类型转换---判断是否为数值类型方可转换
+
+       var c = Number('c');//转换为NaN---NOT A NUMBER
+       var d = Number(null);//转换为0
+       var e = Number(undefined);//转换为NaN---NOT A NUMBER
+       console.log(c,d,e);//判断不是数值类型则转换为NaN
+
+
+       var a = parseInt('3');
+       var b = parseInt('jgg2332');
+       var c = parseInt(null);
+       var d = parseInt(undefined);
+       console.log(a,b,c,d);//判断数据类型是否是整型，不是则输出NaN
+
+
+       var a = parseFloat('3.1212222121ddeede');
+       var b = parseFloat('jgg2332');
+       var c = parseFloat(null);
+       var d = parseFloat(undefined);
+       console.log(a,b,c,d)//判断是否为数值，如果第一个不是数值就输出NaN,如果数值后面有其他的类型数据直接默认丢掉
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this对象</title>
+</head>
+<body>
+    <script>
+      /*   var obj1 = {
+            name:'少年阿东！',
+            age:21,
+            fun:function(){
+                //this指的就是这个方法所在的对象
+                var s = this.age;
+                var n = this.name;
+                console.log(s);
+                console.log(n);
+            }
+        }
+        obj1.fun();
+
+
+        function f(){
+            //普通的函数中也是有this的
+            //this指向全局对象（Window）
+            console.log(this);
+        }
+        f();
+        //this永远指向一个对象
+        //this在什么情况下什么地方 指向那个对象
+
+        k = '678';
+        function fun(){
+            console.log(this.k);
+        }
+
+        var test1 = {
+            k = "123",
+            f:fun,
+        }
+
+        var test2 = {
+            k = '345',
+            f:fun,
+        }
+
+        test1.f();
+        test2.f();
+        //this运行在哪一个对象下，就指向哪个对象 */
+        var o1 = {
+            age:21,
+            fun:function(){
+                console.log(this.age);
+            }
+        }
+
+        var o2 = {
+            age:22,
+            fun:o1.fun,
+        }
+        o2.fun();
+    </script>
+</body>
+</html>

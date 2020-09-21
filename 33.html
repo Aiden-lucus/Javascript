@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象的遍历与删除</title>
+</head>
+<body>
+    <script>
+        var test1 = {
+            name:'阿东',
+            age:21,
+            sex:'男'
+        }
+
+        //使用for....in
+        //for(键 in 对象)
+        //for...in  循环不仅可以循环变量对象,还可以循环遍历数组
+
+        for (var k in test1){
+            console.log(test1[k]);
+        }
+
+
+        var test1 = {
+            name:'阿东',
+            age:21,
+            sex:'男'
+        }
+        //删除不愿意显示的信息
+        delete test1.age;
+        console.log(test1);
+    </script>
+</body>
+</html>

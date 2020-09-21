@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript对象</title>
+</head>
+<body>
+    <script>
+        /*JavaScr ipt中的对象其实就是生活中对象的一个抽象
+        JavaScr ipt的对象是无序属性的集合。
+        其属性可以包含基本值、对象、数组或函数。
+        对象就是一组没有顺序的值。
+        我们可以把JavaScript中的对象想象成键值对，其中值可以是数据和函数。
+        对象的行为和特征
+        特征---属性
+        行为---方法*/
+        
+        //字面量声明对象
+        //var obj1 = {};
+        //对象中的数据都是键值成对存在的
+        //通常来说，值是函数则称为方法，其它类型的值都是属性
+        //通常来说，值是函数则称为方法，其它类型的值都是属性
+        //var obj2 = {age:21,sg:173,name:'lowkey',fei:function(){}};//第四个为方法
+        //实例化方式 声明对象 （内置构造函数）
+        //var obj2 = new Object();//object本身在js中存在
+        //自定义构造函数方式
+        //function Fun(){
+
+        //}
+        //实例化自定义构造函数方式声明对象
+        //var f = new Fun();
+
+        var obj2 = {
+            age:21,
+            sg:173,
+            name:'lowkey',
+            fei:function(){
+                console.log('阿东最帅！');
+            }
+        };
+
+        //获取对象的属性或者方法  对象.属性名
+        //console.log(obj2.sg);
+        //直接进行函数调用
+        obj2.fei();
+    </script>
+</body>
+</html>

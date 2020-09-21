@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日期对象</title>
+</head>
+<body>
+    <script>
+        //获取当前的时间
+        // var time = new Date();
+        // console.log(time);
+
+        //自1970年到现在的毫秒数
+        // var time = Date.now();
+        // console.log(time);
+
+        var da = new Date();
+        console.log(da.getHours());
+        console.log(da.getDate());
+        console.log(da.getFullYear());
+        //JS中或取得时间是计算机本地时间
+        //JS月份的数组是从0开始
+        console.log(da.getMonth()+1);
+    </script>
+</body>
+</html>

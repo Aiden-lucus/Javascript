@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for循环</title>
+</head>
+<body>
+    <script>
+        //格式：for(初始值表达式;判断表达式;自增自减)
+        //{
+        //    代码
+        //}
+
+        var i = 0;
+        while(i < 10){
+            console.log(i);
+            i++;
+        }
+
+        //使用for循环可使代码简洁
+        for(var i = 0;i < 10;i++){
+            console.log(i);
+        }
+
+        //使用for循环计算1-100的和
+        var s = 0;
+        for(var i=0;i<=100;i++ ){
+            s+=i;
+        }
+        console.log(s);
+
+        //计算1-100之间的偶数的和
+        var s = 0;
+        for(var i = 0;i <=100;i++){
+            if(i%2==0){
+                s+=i;
+            }
+        }
+        console.log(s);
+
+        //打印正方形的*图案
+        var s = '';//s赋初值不能为0，否则打印出来的图形开头有一个0，所以设置为空
+        for(var i = 0;i <10;i++){
+            for(var h = 0;h <10;h++){
+                s+='* ';
+            }
+            s+='\n'//换行符号
+        }
+        console.log(s);
+
+        //打印九九乘法表
+        var str = "";
+        for(var i = 1;i <= 9;i++){//外部循环体
+            for(j = i;j <= 9;j++){//内部循环体，换行后首部加1（j=i）
+                str+=i+'*'+j+'='+(i*j)+'\t';//'\t'空格键
+            }
+           str+='\n';//执行完一次循环体就进行换行
+        }
+        console.log(str);
+    </script>
+</body>
+</html>

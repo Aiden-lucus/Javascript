@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据类型转换-布尔型</title>
+</head>
+<body>
+    <script>
+        var a = Boolean('2');
+        var b = Boolean(121);
+        var c = Boolean('');//字符串为空，输出False,打一个空格则会输出True
+        var d = Boolean(null);
+        var e = Boolean(undefined);
+        console.log(a,b,c,d,e);//判断是否有内容，没有就位False,有则为True
+    </script>
+</body>
+</html>

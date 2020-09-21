@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运算符的优先级</title>
+</head>
+<body>
+    <script>
+        var  a = 1;
+        var  b = 2;
+        var  c = 0;
+        console.log(a || c && b);//先进行与运算再进行或运算
+        console.log((a || c) && b);
+
+        //运算的优先级从上往下
+        //1：（）优先级最高
+        //2： 一元运算符 ++ -- ！
+        //3： 算术运算符 （与数学中的运算先后顺序一致）先 *  / % 再+-
+        //4：关系运算符  >  <  >=  <=  
+        //5：相等运算符  ==  ===   !=  !===
+        //6：逻辑运算符 先&&  后||
+        //7: 赋值运算符   =
+        var  s = 4>=6 || '帅' != '丑'  && !(12*23+34==456) && true;
+        console.log(s);/* 输出果为true */
+
+
+        var m = 10;
+        var n = 5 == n/2 && (2+2*n);
+        console.log(n);/* 结果为22----因为前面判断结果为真，所以最终决定权由后面的运算结果决定，结果值为22,为真，所以输出为22 */
+    </script>
+</body>
+</html>

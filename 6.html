@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据类型转换-字符型</title>
+</head>
+<body>
+    <script>
+        var n = 5;
+        var s = n.toString();//数据转换为字符类型
+        console.log(s);//控制台输出
+        console.log(typeof s);//控制台输出数据类型----第一种数据转换方法
+
+        console.log(typeof String(n));//第二种数据转换方法-直接通过强制转换
+
+        var s = ''+n;//因为字符串拼接时，如果发现一个字符串，则后面的所有数据都会进行字符串的拼接
+        console.log(typeof s);//第三种数据类型转换方法-通过+字符串拼接的性质进行数据类型转换
+
+        var n = true;
+        console.log(typeof n.toString());//将数值类型为布尔型的数值进行数据转换成为字符串类型
+    </script>
+</body>
+</html>

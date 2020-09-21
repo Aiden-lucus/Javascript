@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数</title>
+</head>
+<body>
+    <script>
+        //把一段相对独立的具有特定功能的代码封装起来（写到一块地方），形成一个独立实体，就是函数，起名（函数名）---在后续开发中可进行反复调用
+        //关键字声明
+        //function 函数名(){
+        //    代码
+        //}
+
+        //表达式声明
+        //var f(函数名) = function(){
+        //    代码
+        //}
+
+        //函数声明后，里面的代码是不会执行；
+        //函数中的代码想要执行，必须调用这个函数，（函数不调用就一定不会执行）
+        //function f1(){
+        //    console.log(1);
+        //}
+        //函数调用   函数名（）
+        //f1();
+        //f1();
+
+        function s(){//声明函数
+            var sum = 0;
+            for(var i=0;i<=100;i++){
+                sum+=i;
+            }
+            console.log(sum);
+        }//函数未被调用，无法在控制台显示内容
+        s();//调用函数中的代码
+
+
+    </script>    
+</body>
+</html>

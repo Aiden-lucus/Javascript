@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变量提升与代码执行阶段</title>
+</head>
+<body>
+    <script>
+        //  var a = 1;//全局作用域
+        //function f1(){
+        //   var a = 2;//声明在函数内部，是局部作用域
+        //} 
+
+        // var f2 = function(){
+        //    var a = 1;
+        //    console.log(a);//1-----在局部声明可以被执行
+        //}
+        //f2();
+        //console.log(a);//undefined----代码按顺序、循环、分支运行
+        //var a = 2;
+
+        //console.log(a);//undefined
+        //var a = 2;//变量提升：在代码执行之前已经在编译阶段被声明 
+
+        //js代码执行分为两个阶段：
+        //第一：解析（编译）阶段：语法检查、变量及函数进行声明
+        //第二：运行阶段：变量的赋值，代码流程的执行
+
+        //var a;
+        //console.log(a);//声明后未进行赋值，无意义函数
+        //a = 2; 
+
+
+        //作用域与代码执行
+        //var a = 12;
+        //function abc(){
+        //    alert(a);
+        //   var a = 10;//undefined---按照顺序执行
+        //}
+        //abc();//函数调用
+
+        
+        //函数与变量名同名，那么函数声明会替换变量声明
+        function a(){//函数
+                console.log('abc');
+        }
+        var a = 1;//变量名
+        console.log(a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>continue和break语句</title>
+ </head>
+ <body>
+     <script>
+         //打印100以内的能被7整除的数的和
+         var s = 0;
+         for(var i = 0;i<=100;i++){
+             if(i%7==0){
+                 continue;//跳出单次循环
+             }
+             s+=i;
+         }
+         console.log(s);
+
+         //打印200-300以内的能被7整除的第一个数
+         for(var i =200;i<300;i++){
+             if(i%7==0){
+                 console.log(i);
+                 break;//跳出循环，终止程序执行
+             }
+         }
+         //代码的执行代码分为顺序、分支和循环三种结构,顺序结构是默认的;
+         //判断结构主要有if-else和switch-case两种,循环结构有while、do-while、for三种;
+         //其中continue和break是跳出循环;
+     </script>
+ </body>
+ </html>

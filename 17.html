@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三种循环</title>
+</head>
+<body>
+    <script>
+        //如果条件成立，里面的代码就会一直循环执行，
+        //每次执行代码前都要对条件进行重新判断，知道条件不成立，循环结束
+        /* while(条件){
+            代码
+        } */
+       /*  var i = 0;
+        while(i<1000){
+            console.log(i);
+            i++;
+        }
+        console.log(50); */
+
+        //计算1-100的数之和
+        /* var a = 0;
+        var b = 0;
+        while(i<=100){
+            s = s + i;
+            i++;
+        }
+        console.log
+
+        var i = 0;
+        while(i<=100){
+            if(i%7==0){
+                console.log(i)
+            }
+            i++;
+        } */
+
+        //打印100以内所有偶数的和
+       /*  var i = 0;
+        var s = 0;
+        while(i<=100){
+            if(i%2==0){
+                s=s+i;
+                //s+=i;
+            }
+            i++;
+        }
+        console.log(s); */
+
+        //请打印100以内的所有的能3整除的数字的和
+        var i = 0;
+        var s = 0;
+        while(i<=100){
+            if(i%3==0){
+                s+=i;
+            }
+            i++;
+        }
+        console.log(s);
+    </script>
+</body>
+</html>

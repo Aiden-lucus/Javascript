@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作用域及作用域链表</title>
+</head>
+<body>
+    <script>
+        var a = 1;
+        function f1(){
+            function f2(){
+                function f3(){
+                    //var a = 4;
+                    //当函数使用给某个变量时，优先在自己的作用域中查找
+                    //如果找不到，就会向上一层作用域查找
+                    //如果找不到就继续向上一层查找，直到全局作用域
+                    //如果还找不到直接报错
+                    //这就是作用域链
+                    console.log(a);
+                }
+                f3();
+            }
+            f2();
+        }
+        f1();
+    </script>
+</body>
+</html>

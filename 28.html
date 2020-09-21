@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数作为参数</title>
+</head>
+<body>
+    <script>
+        //函数也是一种数据类型
+        //function fn(){
+        //}
+        //function 数据类型----->对象（数组、函数）
+        //console.log(typeof fn)
+
+
+        /* function f1(s){
+            // /var k = 123+s;
+            //console.log(k);
+            s();
+        }
+        var f2 = function(){
+            console.log(222);
+        }//f2被作为一个值，传入f1函数内参与运算
+        //-----------将函数作为参数传入函数内进行调用--------回调
+        f1(f2);
+ */
+
+        //第二种方式：将函数作为参数，赋值到函数外部然后进行调用---闭包
+        function f1(){
+            //k---->f1();作为整体使用
+            var a = 10;
+            var f2 = function(){
+                alert('warning!!!!');
+            }
+            return f2;
+        }
+        var k = f1();
+        k();//此处进行函数调用
+    </script>
+</body>
+</html>

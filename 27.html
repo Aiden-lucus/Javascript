@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匿名函数与自调用函数</title>
+</head>
+<body>
+    <script>
+        //匿名函数没有名字
+        var fun = function(){//赋值给fun函数
+            console.log(1);
+        }
+        fun();//函数调用
+
+        //立即执行函数---自调用函数
+        (function(){
+            alert('warning!!!!');
+        })();//函数的自调用----必须包含在一个括号内-作为一个整体使用
+
+        //作为一个单独的作用域
+        //防止全局变量的污染，封装一个局部作用
+    </script>
+</body>
+</html>

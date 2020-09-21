@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 将js代码写在HTML行内 -->
+    <input type="button" value="按钮" onclick="alert(123)">
+
+    <!-- 将js代码写在标签内 -->
+    <script>
+        alert(345)
+    </script>
+
+    <!-- 将js代码使用外链式引入,但在html页面内不可以再写其它的js代码,写了不会执行不会报错 -->
+    <script src="./1.js"></script>
+</body>
+</html>
